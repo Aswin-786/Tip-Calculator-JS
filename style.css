@@ -4,14 +4,16 @@
 }
 
 body {
-  background: #8990ec;
+  background-image: linear-gradient(to right, #EA8D8D , #A890FE);
+  background-size: 150%;
+  overflow-y: hidden;
 }
 
 .wrapper {
   height: 525px;
   width: 360px;
   color: white;
-  background: #272639;
+  background-image: linear-gradient(135deg, #272639 , #0f0b63);
   border-radius: 1rem;
   padding: 1.2rem;
   margin: 100px auto;
@@ -97,3 +99,13 @@ body {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: hidden;
+  }
+  .wrapper {
+    height: 425px;
+    width: 280px;
+    margin: 100px auto;
+  }
+}
